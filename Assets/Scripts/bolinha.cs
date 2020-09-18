@@ -10,13 +10,16 @@ public class bolinha : MonoBehaviour
     private Rigidbody2D rb2D;
     public float x, y;
     public bool jogo;
+    private gameManager gManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        x = UnityEngine.Random.Range(6f, -6f);
-        y = UnityEngine.Random.Range(6f, -6f);
+        gManagerScript = GameObject.Find("GameManager").GetComponent<gameManager>();
+
+        x = UnityEngine.Random.Range(-6f, 6f);
+        y = UnityEngine.Random.Range(-6f, 6f);
         /* Necessário adicionar "UnityEngine." */
 
         rb2D.velocity = new Vector2(x, y);
@@ -53,9 +56,9 @@ public class bolinha : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && jogo == false)
         {
-            jogo = true;
+            Start();
         }
     }
 
@@ -66,6 +69,7 @@ public class bolinha : MonoBehaviour
             rb2D.velocity = Vector2.zero; //.zero = (0, 0)
             transform.position = new Vector3(0, 0, 0);
             jogo = false;
+            gManagerScript.pontuacao2++;
 
         }
         if (oth.gameObject.tag == "paredeEsquerda")
@@ -73,6 +77,7 @@ public class bolinha : MonoBehaviour
             rb2D.velocity = Vector2.zero;
             transform.position = new Vector3(0, 0, 0);
             jogo = false;
+            gManagerScript.pontuacao1++;
         }
     }
 }
