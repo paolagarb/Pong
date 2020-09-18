@@ -12,8 +12,8 @@ public class bolinha : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        x = UnityEngine.Random.Range(2f, -2f); 
-        y = UnityEngine.Random.Range(2f, -2f);
+        x = UnityEngine.Random.Range(6f, -6f); 
+        y = UnityEngine.Random.Range(6f, -6f);
         /* Necessário adicionar "UnityEngine." */
            
         rb2D.velocity = new Vector2(x, y);
