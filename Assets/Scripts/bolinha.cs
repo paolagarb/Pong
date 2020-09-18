@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class bolinha : MonoBehaviour
 {
-
     private Rigidbody2D rb2D;
     public float x, y;
 
@@ -13,8 +12,9 @@ public class bolinha : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        x = Random.Range(2f, -2); 
-        y = Random.Range(2f, -2);
+        x = UnityEngine.Random.Range(2f, -2f); 
+        y = UnityEngine.Random.Range(2f, -2f);
+        /* Necessário adicionar "UnityEngine." */
            
         rb2D.velocity = new Vector2(x, y);
     }

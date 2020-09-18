@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class players : MonoBehaviour
 {
-    public float velocidade; 
+    public float velocidade;
+    public GameObject player1, player2;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class players : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, Input.GetAxis("Vertical") * velocidade * Time.deltaTime, 0);
-        
+        player1.transform.position += new Vector3(0, Input.GetAxis("vPlayer1") * velocidade * Time.deltaTime, 0);
+        player2.transform.position += new Vector3(0, Input.GetAxis("vPlayer2") * velocidade * Time.deltaTime, 0);
     }
 }
