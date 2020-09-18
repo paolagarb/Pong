@@ -22,6 +22,28 @@ public class bolinha : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (rb2D.velocity.x < 2f && rb2D.velocity.x > -2f)
+        {
+            if (rb2D.velocity.x >= 0)
+            {
+                rb2D.velocity = new Vector2(2f, rb2D.velocity.y);
+            } else
+            {
+                rb2D.velocity = new Vector2(-2f, rb2D.velocity.y);
+            }
+            
+        }
+
+        if (rb2D.velocity.y < 2f && rb2D.velocity.y > -2f)
+        {
+            if (rb2D.velocity.y >= 0)
+            {
+                rb2D.velocity = new Vector2(rb2D.velocity.x, 2f);
+            } else
+            {
+                rb2D.velocity = new Vector2(rb2D.velocity.x, -2f);
+            }
+            
+        }
     }
 }
