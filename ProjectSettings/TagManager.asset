@@ -6,6 +6,7 @@ TagManager:
   tags:
   - paredeDireita
   - paredeEsquerda
+  - parede
   layers:
   - Default
   - TransparentFX
