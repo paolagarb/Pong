@@ -11,7 +11,7 @@ public class bolinha : MonoBehaviour
     public float x, y;
     public bool jogo;
     private gameManager gManagerScript;
-
+    public AudioClip som1, som2;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +78,17 @@ public class bolinha : MonoBehaviour
             transform.position = new Vector3(0, 0, 0);
             jogo = false;
             gManagerScript.pontuacao1++;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.tag == "parede")
+        {
+            AudioSource.PlayClipAtPoint(som1, transform.position);
+        } else
+        {
+            AudioSource.PlayClipAtPoint(som2, transform.position);
         }
     }
 }
