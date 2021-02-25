@@ -1,8 +1,7 @@
 
 # <div align="center"> Pong </center>
 
-
-![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong) ![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong)
+<div align="center> ![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong) ![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong) </div>
 
 
 ### Tecnologias
@@ -14,12 +13,10 @@
 
 ### Projeto
 
-Jogo PONG 
+- Jogo PONG 
 
 
-
-
-:heavy_exclamation_mark: Controles:
+### :heavy_exclamation_mark: Controles:
 
 
 :man: Jogador 1: W - S
@@ -34,5 +31,4 @@ Jogo PONG
 
 
 
-
-Tutorial: CriaJogos - Youtube
+##### Tutorial: CriaJogos - Youtube
