@@ -1,8 +1,12 @@
 
 # <div align="center"> Pong </center>
 
-<div align="center> ![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong) ![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong) </div>
+<div align="center">
+  
+![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong)
+![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong)
 
+</div>
 
 ### Tecnologias
 
