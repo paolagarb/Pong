@@ -31,8 +31,11 @@
 :on: Iniciar: Barra de espaço
 
 
+<div align="center">
+  
 ![](https://github.com/paolagarb/Pong/blob/master/Gif.gif)
 
+</div>
 
 
 ##### Tutorial: CriaJogos - Youtube
