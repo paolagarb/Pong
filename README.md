@@ -1,8 +1,22 @@
 
-# Pong
+# <div align="center"> Pong </center>
 
 
-![](https://github.com/paolagarb/Pong/blob/master/Gif.gif)
+![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong) ![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong)
+
+
+### Tecnologias
+
+- C#
+
+- Unity
+
+
+### Projeto
+
+Jogo PONG 
+
+
 
 
 :heavy_exclamation_mark: Controles:
@@ -16,10 +30,9 @@
 :on: Iniciar: Barra de espaço
 
 
+![](https://github.com/paolagarb/Pong/blob/master/Gif.gif)
 
 
-Primeiro contato com Unity. 
 
-CriaJogos - yt
 
-![GitHub language count](https://img.shields.io/github/languages/count/paolagarb/pong) ![GitHub repo size](https://img.shields.io/github/repo-size/paolagarb/pong)
+Tutorial: CriaJogos - Youtube
